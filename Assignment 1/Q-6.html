@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FRAME</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            max-height: 100dvh;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 30% 70%;
+         }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px dotted rgb(203, 203, 203);
+        }
+        div:nth-child(1){
+            grid-column: span 2;
+            background-color:cornflowerblue;
+        }
+        div:nth-child(2){
+            background-color: aquamarine;
+        }
+    </style>
+    <!--create 2 rows & second row should have a 2 sections and 1st should be 30% of width and 70% width-->
+</head>
+<body>
+    <main>
+        <div>
+            <a href="https://www.google.co.in/" target="_blank">google</a>
+        </div>
+        <div>
+            <a href="https://unsplash.com/s/photos/jpg" target="_blank">unsplash</a>
+        </div>
+        <div>
+            ,<a href="https://github.com/" target="_blank">github</a>
+        </div>
+    </main>
+    
+</body>
+</html>

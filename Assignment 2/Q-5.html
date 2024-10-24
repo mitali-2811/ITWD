@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <h1>Arithmetic Operations in JavaScript</h1>
+    <div id="results"></div>
+
+    <script>
+        // Define two numbers
+        const num1 = 10;
+        const num2 = 5;
+
+        // Perform arithmetic operations
+        const addition = num1 + num2;         // Addition
+        const subtraction = num1 - num2;      // Subtraction
+        const multiplication = num1 * num2;   // Multiplication
+        const division = num1 / num2;         // Division
+        const modulus = num1 % num2;          // Modulus
+
+        // Display results
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = `
+            <p>Addition: ${num1} + ${num2} = ${addition}</p>
+            <p>Subtraction: ${num1} - ${num2} = ${subtraction}</p>
+            <p>Multiplication: ${num1} * ${num2} = ${multiplication}</p>
+            <p>Division: ${num1} / ${num2} = ${division}</p>
+            <p>Modulus: ${num1} % ${num2} = ${modulus}</p>
+        `;
+    </script>
+</body>
+</html>
